@@ -64,12 +64,15 @@ function Game(){
         playGame();
     }
     if(humanScore>computerScore){
+        console.log("humans won")
         alert("humans won")
     }
     else if(humanScore<computerScore){
+        console.log("computers won")
         alert("computers won")
     }
     else if(humanScore===computerScore){
+        console.log("draw")
         alert("draw")
     }  
 }
