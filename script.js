@@ -17,7 +17,11 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-    let hChoice=prompt("choose rock, paper, scissors")
+    let hChoice=String(prompt("choose rock, paper, scissors"))
+    if(hChoice!=="rock" && hChoice!=="paper" && hChoice!=="scissors"){
+        alert("choose one of the three")
+        getHumanChoice();
+    }
     return hChoice;
 }
 
