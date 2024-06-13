@@ -1,4 +1,3 @@
-console.log("hello World")
 let humanScore=0;
 let computerScore=0;
 
@@ -30,6 +29,7 @@ function getHumanChoice(){
 function playGame(){
     let humanSelection = getHumanChoice();
     let computerSelection = getComputerChoice();
+    console.log(humanSelection, computerSelection)
 
     
     let playRound=(humanChoice, computerChoice)=>{
